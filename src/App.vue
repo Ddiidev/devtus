@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import ProjectLaunchRow from './components/ProjectLaunchRow.vue'
 import { projects } from './data/projects'
 
+const baseUrl = import.meta.env.BASE_URL
 const activeTab = ref('projects')
 
 const tabs = [
@@ -18,7 +19,7 @@ const projectCount = computed(() => projects.length)
     <section class="window tools-window is-bright active" aria-label="TOOLS">
       <div class="title-bar active">
         <div class="title-bar-text">
-          <img class="title-bar-icon" src="/favicon.svg" alt="" aria-hidden="true" />
+          <img class="title-bar-icon" :src="`${baseUrl}favicon.svg`" alt="" aria-hidden="true" />
           <span>TOOLS</span>
         </div>
         <div class="title-bar-controls">

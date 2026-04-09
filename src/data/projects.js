@@ -1,9 +1,11 @@
+const baseUrl = import.meta.env.BASE_URL
+
 export const projects = [
   {
     id: 'tabua-mare-api',
     title: 'Tábua da Maré API',
     subtitle: 'API pública para consultar marés do litoral brasileiro.',
-    image: '/assets/tabuamare-card.png',
+    image: `${baseUrl}assets/tabuamare-card.png`,
     badge: 'Repo',
     previewHref: 'https://tabuamare.devtu.qzz.io/',
     actions: [
@@ -23,7 +25,7 @@ export const projects = [
     id: 'andreluiz-site',
     title: 'andreluiz.is-a.dev',
     subtitle: 'Meu site pessoal com perfil, projetos e presença online.',
-    image: '/assets/andreluiz-card.png',
+    image: `${baseUrl}assets/andreluiz-card.png`,
     badge: 'Site',
     previewHref: 'https://andreluiz.is-a.dev/',
     actions: [
